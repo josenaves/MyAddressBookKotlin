@@ -336,12 +336,9 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
 
         val isEmail: TextView.() -> Boolean = { Patterns.EMAIL_ADDRESS.matcher(text).matches() }
 
-        val failIcon = ContextCompat.getDrawable(this, R.drawable.ic_fail)
-        val passIcon = ContextCompat.getDrawable(this, R.drawable.ic_pass)
-
-        mEntryValid = mFirstNameEdit.validateWith(passIcon, failIcon, notEmpty) and
-                mLastNameEdit.validateWith(passIcon, failIcon, notEmpty) and
-                mEmailEdit.validateWith(passIcon, failIcon, isEmail)
+        mEntryValid = mFirstNameEdit.validateWith(validator = notEmpty) and
+                mLastNameEdit.validateWith(validator = notEmpty) and
+                mEmailEdit.validateWith(validator = isEmail)
     }
 
     private inner class ContactsAdapter internal constructor(
