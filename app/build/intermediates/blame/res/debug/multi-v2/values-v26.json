@@ -4,7 +4,7 @@
             "outputFile": "/Users/josenaves/Projects/MyAddressBookKotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/josenaves/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ee0d720bd4739bb56508fee6413f9151/res/values-v26/values-v26.xml",
+                    "source": "/Users/josenaves/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c636d54cbe6a75dbf13fbfa9641dc9c9/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/josenaves/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e1dec20acfc5a5439ec426894499f0b2/res/values-v26/values-v26.xml",
+                    "source": "/Users/josenaves/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4a315dd6e2f8026ef09d2e5c15a22e33/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
