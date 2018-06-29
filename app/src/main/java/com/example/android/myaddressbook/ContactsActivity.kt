@@ -343,13 +343,13 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
                 R.drawable.ic_pass)
 
         mFirstNameEdit.setCompoundDrawablesWithIntrinsicBounds(null, null,
-                if (notEmpty(edittext_firstname)) passIcon else failIcon, null)
+                if (notEmpty(mFirstNameEdit)) passIcon else failIcon, null)
         mLastNameEdit.setCompoundDrawablesWithIntrinsicBounds(null, null,
-                if (notEmpty(edittext_lastname)) passIcon else failIcon, null)
+                if (notEmpty(mLastNameEdit)) passIcon else failIcon, null)
         mEmailEdit.setCompoundDrawablesWithIntrinsicBounds(null, null,
-                if (isEmail(edittext_email)) passIcon else failIcon, null)
+                if (isEmail(mEmailEdit)) passIcon else failIcon, null)
 
-        mEntryValid = notEmpty(edittext_firstname) and notEmpty(edittext_lastname) and isEmail(edittext_email)
+        mEntryValid = notEmpty(mFirstNameEdit) and notEmpty(mLastNameEdit) and isEmail(mEmailEdit)
     }
 
     private inner class ContactsAdapter internal constructor(
