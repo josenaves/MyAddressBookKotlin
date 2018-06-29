@@ -22,12 +22,15 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="Common (experimental) " useProjectSettings="false">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c636d54cbe6a75dbf13fbfa9641dc9c9/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4a315dd6e2f8026ef09d2e5c15a22e33/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/5983f7eb2aee1a6b14b90e998df25e76/jars/classes.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.50/3811b225f9a22abf4f9d8a6f81adef0ba78a3c5/kotlin-stdlib-jdk7-1.2.50.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/585e90a72fd674f814f4e616ac83bf35/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/b935fea2d5abf365bd0fbf01bbe87da9/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/5ef57b816e472ae6eda039ca7df02dd5/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a3fc94ebf9c9834d020d5df0982d45fe/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/43b48cef546a616b03409b8335f691ba/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/55262753588685e2769bb527b9e8599a/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/75ed3290078d39952c6c6b2b8a8e9896/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/0aa0131f0c37c6612e2a43d498fadfb7/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/6957337287426f1d9aaebb9be25d2698/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1f85b5bdb02e477ff74a2c07357a87c9/jars/classes.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.2/bfc967828daffc35ba01c9ee204d98b664930a0f/constraint-layout-solver-1.1.2.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.50/66d47b004c5b8a1d2d1df9e463187390ed741316/kotlin-stdlib-1.2.50.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1bfa12ccae077a880eb0a1f854adc700/jars/classes.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3935f7a722d7e62d1b7c44af46b226fd/jars/classes.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.50/6b19a2fcc29d34878b3aab33fd5fcf70458a73df/kotlin-stdlib-common-1.2.50.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e15a93a60fff39edac19da226b035792/jars/classes.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/josenaves/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/10fd8cf450c234a5fdd3f40aa078e98f/jars/classes.jar:/Users/josenaves/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/josenaves/Library/Android/sdk/platforms/android-27/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
           <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
           <option name="languageVersion" value="1.2" />
           <option name="apiVersion" value="1.2" />
           <option name="pluginOptions">
@@ -116,7 +119,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
@@ -129,10 +131,11 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
+      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.android.support:transition-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4-27.1.1" level="project" />
@@ -160,6 +163,5 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: android-android-27" level="project" />
   </component>
 </module>

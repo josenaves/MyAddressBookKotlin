@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jun 28 21:35:02 BRT 2018
+#Fri Jun 29 11:07:03 BRT 2018
 2.base=/Users/josenaves/Projects/MyAddressBookKotlin/app/build/intermediates/assets/debug
 0.path=classes.dex
 2.baseType=DIRECTORY
