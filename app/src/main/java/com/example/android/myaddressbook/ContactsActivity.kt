@@ -41,9 +41,12 @@ import org.json.JSONException
 import java.io.IOException
 import java.util.*
 
+import kotlinx.android.synthetic.main.activity_contacts.*
+
+
 class ContactsActivity : AppCompatActivity(), TextWatcher {
 
-    // lateinit. Use this keyword when you know the value of a property will not be null
+    // lateinit: Use this keyword when you know the value of a property will not be null
     // once it is initialized.
 
     private lateinit var mContacts: ArrayList<Contact>
@@ -60,9 +63,6 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contacts)
-
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-        val fab = findViewById<FloatingActionButton>(R.id.fab)
 
         mPrefs = getPreferences(Context.MODE_PRIVATE)
         mContacts = loadContacts()
