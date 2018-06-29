@@ -19,13 +19,11 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.text.Editable
 import android.text.TextWatcher
@@ -36,12 +34,13 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.gson.Gson
+import kotlinx.android.synthetic.main.activity_contacts.*
+import kotlinx.android.synthetic.main.contact_list_item.view.*
+import kotlinx.android.synthetic.main.input_contact_dialog.view.*
 import org.json.JSONArray
 import org.json.JSONException
 import java.io.IOException
 import java.util.*
-
-import kotlinx.android.synthetic.main.activity_contacts.*
 
 
 class ContactsActivity : AppCompatActivity(), TextWatcher {
@@ -145,9 +144,9 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
         val dialogView = LayoutInflater.from(this)
                 .inflate(R.layout.input_contact_dialog, null)
 
-        mFirstNameEdit = dialogView.findViewById(R.id.edittext_firstname)
-        mLastNameEdit = dialogView.findViewById(R.id.edittext_lastname)
-        mEmailEdit = dialogView.findViewById(R.id.edittext_email)
+        mFirstNameEdit = dialogView.edittext_firstname
+        mLastNameEdit = dialogView.edittext_lastname
+        mEmailEdit = dialogView.edittext_email
 
         // Listens to text changes to validate after each key press
         mFirstNameEdit.addTextChangedListener(this)
@@ -367,8 +366,8 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
         }
 
         internal inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            var nameLabel: TextView = itemView.findViewById(R.id.textview_name)
-            var emailLabel: TextView = itemView.findViewById(R.id.textview_email)
+            var nameLabel: TextView = itemView.textview_name
+            var emailLabel: TextView = itemView.textview_email
 
             init {
                 itemView.setOnClickListener { showAddContactDialog(adapterPosition) }
