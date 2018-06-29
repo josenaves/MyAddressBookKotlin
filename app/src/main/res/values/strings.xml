@@ -23,6 +23,8 @@
     <string name="cancel">Cancel</string>
     <string name="contact_not_valid">Please enter valid contact information</string>
     <string name="action_generate">Generate</string>
+    <string name="action_sort_by_first_name">Sort by First Name</string>
+    <string name="action_sort_by_last_name">Sort by Last Name</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email_address">Email Address</string>
