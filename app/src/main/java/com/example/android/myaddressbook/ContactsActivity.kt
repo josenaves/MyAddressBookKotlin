@@ -19,7 +19,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
@@ -36,7 +35,6 @@ import android.widget.Toast
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_contacts.*
 import kotlinx.android.synthetic.main.contact_list_item.view.*
-import kotlinx.android.synthetic.main.input_contact_dialog.*
 import kotlinx.android.synthetic.main.input_contact_dialog.view.*
 import org.json.JSONArray
 import org.json.JSONException
@@ -331,9 +329,7 @@ class ContactsActivity : AppCompatActivity(), TextWatcher {
      * text from member variables.
      */
     override fun afterTextChanged(editable: Editable) {
-        // just one parameter can be substituted with it
         val notEmpty: TextView.() -> Boolean = { text.isNotEmpty() }
-
         val isEmail: TextView.() -> Boolean = { Patterns.EMAIL_ADDRESS.matcher(text).matches() }
 
         mEntryValid = mFirstNameEdit.validateWith(validator = notEmpty) and
