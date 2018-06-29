@@ -1,4 +1,0 @@
-#Fri Jun 29 11:07:02 BRT 2018
-base.0=/Users/josenaves/Projects/MyAddressBookKotlin/app/build/intermediates/transforms/dexMerger/debug/7
-path.0=classes.dex
-renamed.0=classes.dex

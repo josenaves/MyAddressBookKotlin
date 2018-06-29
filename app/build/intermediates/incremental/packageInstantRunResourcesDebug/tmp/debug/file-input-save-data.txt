@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Fri Jun 29 11:06:46 BRT 2018
-0.baseType=DIRECTORY
-0.base=/Users/josenaves/Projects/MyAddressBookKotlin/app/build/intermediates/assets/debug
-0.path=mock_contacts.json
-0.set=ASSET
-count=1
